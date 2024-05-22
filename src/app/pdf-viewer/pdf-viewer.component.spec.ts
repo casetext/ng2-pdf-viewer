@@ -109,7 +109,8 @@ describe('AppComponent', () => {
       expect((<any>pdfViewer).getDocumentParams()).toEqual({
         url: src,
         cMapUrl,
-        cMapPacked: true
+        cMapPacked: true,
+        isEvalSupported: false
       });
     });
 
@@ -120,7 +121,8 @@ describe('AppComponent', () => {
       expect((<any>pdfViewer).getDocumentParams()).toEqual({
         url: src,
         cMapUrl,
-        cMapPacked: true
+        cMapPacked: true,
+        isEvalSupported: false
       });
     });
 
@@ -132,7 +134,8 @@ describe('AppComponent', () => {
       expect((<any>pdfViewer).getDocumentParams()).toEqual({
         url: src,
         cMapUrl,
-        cMapPacked: true
+        cMapPacked: true,
+        isEvalSupported: false
       });
     });
   });
