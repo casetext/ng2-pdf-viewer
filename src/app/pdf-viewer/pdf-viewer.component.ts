@@ -471,7 +471,10 @@ export class PdfViewerComponent
 
     const params: any = {
       cMapUrl: this._cMapsUrl,
-      cMapPacked: true
+      cMapPacked: true,
+      // Workaround for CVE-2024-4367.
+      // For details see: https://codeanlabs.com/blog/research/cve-2024-4367-arbitrary-js-execution-in-pdf-js/
+      isEvalSupported: false
     };
 
     if (srcType === 'string') {
